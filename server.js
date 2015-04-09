@@ -10,7 +10,7 @@ server.connection({
 });
 
 // Set view engine and folder
-server.view({
+server.views({
     engines: {
         html: require('swig')
     },

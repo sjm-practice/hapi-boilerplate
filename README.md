@@ -10,7 +10,9 @@ Instead of forking and copying much of the source, this project was assembled fr
 ## Goals
 At the onset, some goals in mind were to gain experience with the following components:
 * Hapi
+    - named routes
 * Authentication (and bcrypt)
 * MongoDB
 * React
 * Locale
+* Config

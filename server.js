@@ -24,6 +24,9 @@ module.exports = server;
 // plugins are loaded first, then project specific plugins. 
 server.register([
     {
+        register: require('hapi-named-routes')
+    },
+    {
         register: require('./server/routes/index.js')
     }
 ], function() {

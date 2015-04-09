@@ -16,11 +16,23 @@ exports.register = function (server, options, next) {
                 },
                 id: 'index'
             }
+        },
+        {
+            method: 'GET',
+            path: '/about',
+            config: {
+                handler: function (request, reply) {
+                    reply.view('about', { title: 'An About Page' });
+                },
+                id: 'about'  
+            }
         }
     ]);
 
     next();
 };
+
 exports.register.attributes = {
     name: 'baseRoutes'
 };
+

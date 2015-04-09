@@ -29,6 +29,16 @@ exports.register = function (server, options, next) {
         },
         {
             method: 'GET',
+            path: '/partials/{path*}',
+            config: {
+                handler: {
+                    directory: {path: './server/views/partials'}
+                },
+                id: 'partials'  
+            }
+        },
+        {
+            method: 'GET',
             path: '/{path*}',
             config: {
                 handler: function (request, reply) {

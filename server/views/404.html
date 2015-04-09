@@ -1,0 +1,12 @@
+{% extends './layouts/default.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+    <ul class="menu">
+        <li><a href="{{path.index}}">Home</a></li>
+    </ul>
+
+    <h1>{{title}}</h1>
+    <p>Missing page or incorrect route.</p>
+{% endblock %}

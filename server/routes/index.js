@@ -22,9 +22,19 @@ exports.register = function (server, options, next) {
             path: '/about',
             config: {
                 handler: function (request, reply) {
-                    reply.view('about', { title: 'An About Page' });
+                    reply.view('about', {title: 'An About Page'});
                 },
                 id: 'about'  
+            }
+        },
+        {
+            method: 'GET',
+            path: '/{path*}',
+            config: {
+                handler: function (request, reply) {
+                    reply.view('404', {title: 'Page Not Found - 404'}).code(404);
+                },
+                id: '404'  
             }
         }
     ]);

@@ -10,5 +10,11 @@
     <h1>{{title}}</h1>
     <p>This is an about page.</p>
     <h2>Team</h2>
+    {% for member in members %}
+        {% include './partials/member.html' with member only %}
+    {% endfor %}
+    <br>
+    <div>---------------</div>
+    <br>
     {% include './partials/footer.html' %}    
 {% endblock %}

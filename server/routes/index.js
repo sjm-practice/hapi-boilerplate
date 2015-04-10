@@ -23,7 +23,12 @@ exports.register = function (server, options, next) {
             config: {
                 handler: function (request, reply) {
                     reply.view('about', {
-                        title: 'An About Page'
+                        title: 'An About Page',
+                        members: [
+                            {name: 'Steve'},
+                            {name: 'Alice'},
+                            {name: 'Barb'}
+                        ]
                     });
                 },
                 id: 'about'  

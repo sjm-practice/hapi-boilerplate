@@ -1,21 +1,17 @@
-# hapi-boilerplate
-A hapi boilerplate created from scratch, based on several popular existing boilerplates, for the purpose of learning structure and hapi fundamentals.
-
-This boilerplate was built referencing the following other boiler plates: hapi-ninja (by poetic-ninja), aqua (by jedireza), nodejs-account-boilerplate (by fs-opensource), and mullet (by lynnaloo).
-
-Folder structure, practices & style, and functionality were borrowed from each.
+# hapi-ninja-bp-recreated
+A hapi boilerplate (re)created from scratch, based on the hapi-ninja boilerplate. This was done for the purpose of learning structure and hapi fundamentals.
 
 Instead of forking and copying much of the source, this project was assembled from scratch to gain understanding of each piece individually, as well as what components are fundamental to common robust web servers.
 
 ## Goals
 At the onset, some goals in mind were to gain experience with the following components:
+* Folder Structure
 * Hapi
     - named routes
-* Authentication (and bcrypt)
-* MongoDB
-* React
-* Locale
+    - asset management
 * Config
+* Route Configuration (best practice)
+* Gulp
 
 ## Notes
 * hapi-ninja

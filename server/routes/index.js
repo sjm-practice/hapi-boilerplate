@@ -22,7 +22,14 @@ exports.register = function (server, options, next) {
             path: '/about',
             config: {
                 handler: function (request, reply) {
-                    reply.view('about', {title: 'An About Page'});
+                    reply.view('about', {
+                        title: 'An About Page',
+                        members: [
+                            {name: 'Steve'},
+                            {name: 'Alice'},
+                            {name: 'Barb'}
+                        ]
+                    });
                 },
                 id: 'about'  
             }

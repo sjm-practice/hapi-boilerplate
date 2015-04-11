@@ -12,11 +12,10 @@ At the onset, some goals in mind were to gain experience with the following comp
 * Config
 * Route Configuration (best practice)
 * Gulp
-* Logging (good)
+* Logging (good, console & file)
 
 ### TODO
 * assets
-* good / good console
 
 ## Notes
 * hapi-ninja

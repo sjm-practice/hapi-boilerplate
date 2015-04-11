@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/sjm-practice/hapi-boilerplate",
   "dependencies": {
+    "good": "^6.0.0",
+    "good-console": "^5.0.0",
+    "good-file": "^5.0.0",
     "hapi": "^8.4.0",
     "hapi-named-routes": "^0.3.0",
     "swig": "^1.4.2"

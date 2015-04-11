@@ -24,14 +24,37 @@ module.exports = server;
 // plugins are loaded first, then project specific plugins. 
 server.register([
     {
+        register: require('good'),
+        options: {
+            opsInterval: 60000,
+            reporters: [{
+                reporter: require('good-console'),
+                events: { log: '*', request: '*', response: '*', error: '*' }
+            },
+            {
+                reporter: require('good-file'),
+                events: { ops: '*', error: '*' },
+                config: {
+                    path: './server/logs/',
+                    rotate: 'daily'
+                }
+            }]
+        }        
+    },
+    {
         register: require('hapi-named-routes')
     },
     {
         register: require('./server/routes/index.js')
     }
-], function() {
-    // Start the server
-    server.start(function() {
-        console.log('Server started at:', server.info.uri);
-    });
+], function(err) {
+
+    if (err) {
+        console.error(err); 
+    } else {
+        // Start the server
+        server.start(function() {
+            console.log('Server started at:', server.info.uri);
+        });        
+    };
 });

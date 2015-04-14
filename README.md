@@ -26,16 +26,16 @@ At the onset, some goals in mind were to gain experience with the following comp
 
 |                     |    hapi-ninja   |      fs-accounts      |          aqua          | mullet |
 |---------------------|:---------------:|:---------------------:|:----------------------:|:------:|
-| Server              |       hapi      |        express        |          hapi          |  hapi  |
-| Test                |        -        |         mocha         |           lab          |  jest  |
-| Authentication      |        -        |    bcrypt passport    | bcrypt hapi-basic-auth |    -   |
-| User Mgmt           |        -        |          yes          |           yes          |    -   |
-| Config              |   yes (assets)  |          yes          |           yes          |    ?   |
-| Locale              |        -        |          yes          |            -           |    ?   |
-| UI                  |        -        | bootstrap fontawesome |          react         |  react |
-| Directory Structure | client / public |          yes          |           yes          |    -   |
-| Tasks               |       gulp      |        wercker        |          gulp          |  grunt |
-| Data Store          |        -        |        mongodb        |            ?           |    ?   |
-| Email               |        -        |        EmailJS        |           yes          |    ?   |
-| Logging             |       good      |           ?           |            ?           |    ?   |
-| API / Endpoints     |        -        |          yes          |           yes          |    ?   |
+| **Server**              |       hapi      |        express        |          hapi          |  hapi  |
+| **Test**                |        -        |         mocha         |           lab          |  jest  |
+| **Authentication**      |        -        |    bcrypt,<br/>passport    | bcrypt,</br>hapi-basic-auth |    -   |
+| **User Mgmt**           |        -        |          yes          |           yes          |    -   |
+| **Config**              |   yes (assets)  |          yes          |           yes          |    ?   |
+| **Locale**              |        -        |          yes          |            -           |    ?   |
+| **UI**                  |        -        | bootstrap fontawesome |          react         |  react |
+| **Directory Structure** | client / public |          yes          |           yes          |    -   |
+| **Tasks**               |       gulp      |        wercker        |          gulp          |  grunt |
+| **Data Store**          |        -        |        mongodb        |            ?           |    ?   |
+| **Email**               |        -        |        EmailJS        |           yes          |    ?   |
+| **Logging**             |       good      |           ?           |            ?           |    ?   |
+| **API / Endpoints**     |        -        |          yes          |           yes          |    ?   |

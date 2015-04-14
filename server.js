@@ -45,7 +45,10 @@ server.register([
         register: require('hapi-named-routes')
     },
     {
-        register: require('./server/routes/index.js')
+        register: require('./server/controllers/index.js')
+    },
+    {
+        register: require('./server/assets/index.js')
     }
 ], function(err) {
 
@@ -56,5 +59,5 @@ server.register([
         server.start(function() {
             console.log('Server started at:', server.info.uri);
         });        
-    };
+    }
 });

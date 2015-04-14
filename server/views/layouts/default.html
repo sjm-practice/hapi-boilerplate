@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+    {% include "../includes/head.html" %}
 </head>
 <body>
-    {% block content %}{% endblock %}
+    <div class="container">
+        <img class="logo" src="images/projects.png">
+        {% block content %}{% endblock %}
+    </div>
+    {% include "../includes/foot.html" %}
 </body>
 </html>

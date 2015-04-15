@@ -42,6 +42,10 @@ server.register([
         }        
     },
     {
+        register: require('hapi-assets'),
+        options: require('./server/assets/assets.js')
+    },
+    {
         register: require('hapi-named-routes')
     },
     {

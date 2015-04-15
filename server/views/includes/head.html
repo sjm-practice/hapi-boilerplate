@@ -1,4 +1,5 @@
 {% block head %}
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    {% for item in assets.css %}
+        <link rel="stylesheet" type="text/css" href="{{item}}">
+    {% endfor %}
 {% endblock %}

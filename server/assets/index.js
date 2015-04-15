@@ -1,3 +1,5 @@
+'use strict';
+
 // Routing and file serving for public assets.
 exports.register = function (server, options, next) {
     server.route([
